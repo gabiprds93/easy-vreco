@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Vreco</title>
+    <!--zoom desde mobile-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Easy-vreco</title>
+    <!--typografia-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <button id="btnEncuentrame" class="btn btn-success"><i class="fa fa-user" aria-hidden="true"></i> Encuéntrame</button>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="form-group">
+                    <label for="origen">Origen:</label>
+                    <input type="text" id="origen" name="origen" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <div class="form-group">
+                    <label for="destino">Destino:</label>
+                    <input type="text" id="destino" name="destino" placeholder="Introduce una ubicación" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+                <button id="ruta" class="btn btn-success"><i class="fa fa-bicycle" aria-hidden="true"></i> Ruta</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12" id="mapa">
+                <!-- Aqui ira nuestro mapa -->
+            </div>
+        </div>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--MAPA-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Tu Archivo main.js -->
+    <script src="https://use.fontawesome.com/1625bb79ec.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvTyLEkc70GBmpbdIWEehuA58k76DLndk&callback=initMap&libraries=places"></script>
+    
+</body>
+</html>
